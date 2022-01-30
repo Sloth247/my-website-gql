@@ -1,0 +1,66 @@
+@use '../sass/mixins.scss';
+@use '../sass/variables.scss';
+.footer {
+  background-color: variables.$color-pink-bg;
+  padding: 6rem 5% 0 5%;
+  color: #fff;
+
+  @include mixins.mq(medium) {
+    padding-top: 10rem;
+  }
+
+  &__inner {
+    padding: 2rem 4rem;
+    background-color: #fff;
+    max-width: 25rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    color: variables.$color-black;
+    @include mixins.mq(medium) {
+      margin-bottom: 10rem;
+    }
+  }
+
+  &__container {
+    display: grid;
+    place-content: center;
+  }
+
+  &__icon-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__open {
+    font-size: 1.2rem;
+    font-weight: variables.$font-weight-bold;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+  &__contact-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease-in;
+
+    &:focus,
+    &:hover {
+      transform: translateY(-0.1rem);
+      color: variables.$color-blue;
+    }
+
+    & span {
+      margin-left: 1rem;
+    }
+  }
+  &__copyrights {
+    text-align: center;
+    color: #fff;
+    font-weight: variables.$font-weight-bold;
+    margin-top: 1rem;
+  }
+}
