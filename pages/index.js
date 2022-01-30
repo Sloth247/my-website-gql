@@ -2,19 +2,59 @@
 import About from '../components/about';
 import Skills from '../components/skills';
 import Portfolio from '../components/portfolio';
-import HeaderHome from '../components/headerHome';
-import FooterHome from '../components/footerHome';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
-export default function Home() {
+import { gql } from '@apollo/client';
+import { client } from '../lib/apollo';
+
+export default function Home({ posts }) {
   return (
     <>
-      <HeaderHome />
+      <Header />
       <main className="main">
         <About />
         <Skills />
-        <Portfolio />
+        <Portfolio posts={posts} />
       </main>
-      <FooterHome />
+      <Footer />
     </>
   );
+}
+export async function getStaticProps() {
+  const result = await client.query({
+    query: gql`
+      query GetWordPressPosts {
+        posts {
+          edges {
+            node {
+              slug
+              excerpt
+              title
+              content
+              featuredImage {
+                node {
+                  guid
+                  altText
+                }
+              }
+              excerpt
+              github {
+                githubUrl
+              }
+              liveSite {
+                liveSiteUrl
+              }
+            }
+          }
+        }
+      }
+    `,
+  });
+  const posts = result.data.posts.edges.map(({ node }) => node);
+  return {
+    props: {
+      posts,
+    },
+  };
 }

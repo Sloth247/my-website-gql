@@ -29,6 +29,7 @@
   &__icon-container {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
   }
 
   &__open {
@@ -60,5 +61,6 @@
     text-align: center;
     color: #fff;
     font-weight: variables.$font-weight-bold;
+    margin-top: 1rem;
   }
 }

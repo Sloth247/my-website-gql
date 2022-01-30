@@ -13,6 +13,9 @@
   z-index: -3;
 
   @include mixins.mq(medium) {
+    padding: 4rem 5%;
+  }
+  @include mixins.mq(large) {
     padding: 4rem 10%;
   }
   &--container {
@@ -50,8 +53,8 @@
       font-size: 1.4rem;
       position: relative;
       text-align: left;
-
       margin-bottom: 1rem;
+      outline: none;
 
       &::after {
         content: '';
