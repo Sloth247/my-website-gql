@@ -1,6 +1,6 @@
 import styles from '../styles/components/hamburger.module.scss';
 
-export default function Hamburger({ mobileExpanded, handleClick }) {
+export default function Hamburger({ mobileExpanded, handleButtonClick }) {
   return (
     <button
       className={
@@ -11,7 +11,7 @@ export default function Hamburger({ mobileExpanded, handleClick }) {
       aria-labelledby="toggle-menu"
       aria-expanded={mobileExpanded}
       aria-controls="mobile-menu"
-      onClick={handleClick}
+      onClick={handleButtonClick}
     >
       <h2 className="sr-only" id="toggle-menu">
         Mobile Menu
