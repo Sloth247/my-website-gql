@@ -26,7 +26,7 @@ body {
   min-height: 100vh;
   margin: 0 auto;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   body {
     font-size: 1.2rem;
   }
@@ -71,7 +71,7 @@ h2 {
 .wrapper {
   padding: 5%;
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   .wrapper {
     padding: 5% 10%;
   }

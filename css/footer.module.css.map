@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sources":["../styles/components/footer.module.scss","../styles/sass/variables.scss","footer.module.css","../styles/sass/mixins.scss"],"names":[],"mappings":"AAGA;EACE,yBCOc;EDNd,qBAAA;AEFF;ACDI;EHCJ;IAII,yBAAA;EEAF;AACF;AFEE;EACE,aAAA;EACA,mBAAA;EACA,WAAA;AEAJ;AFGE;EACE,kBAAA;EACA,gBCbe;EDcf,gBAAA;AEDJ","file":"footer.module.css"}
+=======
+{"version":3,"sources":["../styles/components/footer.module.scss","../styles/sass/variables.scss","footer.module.css","../styles/sass/mixins.scss"],"names":[],"mappings":"AAEA;EACE,yBCOc;EDNd,qBAAA;EACA,WAAA;AEDF;ACFI;EHAJ;IAMI,kBAAA;EEAF;AACF;AFEE;EACE,kBAAA;EACA,sBAAA;EACA,gBAAA;EACA,cAAA;EACA,mBAAA;EACA,cCJU;ACId;ACfI;EHSF;IAQI,oBAAA;EEEJ;AACF;AFCE;EACE,aAAA;EACA,qBAAA;AECJ;AFEE;EACE,aAAA;EACA,mBAAA;EACA,WAAA;AEAJ;AFGE;EACE,iBAAA;EACA,gBC/Be;EDgCf,mBAAA;AEDJ;AFIE;EACE,mBAAA;AEFJ;AFIE;EACE,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,4BAAA;AEFJ;AFII;EAEE,8BAAA;EACA,cCpCO;ACiCb;AFMI;EACE,iBAAA;AEJN;AFOE;EACE,kBAAA;EACA,WAAA;EACA,gBCzDe;ED0Df,gBAAA;AELJ","file":"footer.module.css"}
+>>>>>>> 9d86ca2b3080ef42138d398134f204d849821019

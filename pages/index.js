@@ -4,7 +4,7 @@ import Skills from '../components/skills';
 import Portfolio from '../components/portfolio';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import Contact from '../components/contact'
+import Contact from '../components/contact';
 
 import { gql } from '@apollo/client';
 import { client } from '../lib/apollo';
