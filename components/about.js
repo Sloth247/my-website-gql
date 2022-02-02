@@ -9,8 +9,12 @@ export default function About() {
         <h2 className={styles['main__about--title']}>About Me</h2>
         <Image
           src={Hero}
-          alt="A Developer Woman"
+          alt=""
           className={styles['main__about--img']}
+          aria-hidden="true"
+          position="relative"
+          width={711}
+          height={400}
         />
         <p className={styles['main__about--description']}>
           Hi 👋 there, I&apos;m Yuko Horita and thanks for visiting my website.

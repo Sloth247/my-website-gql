@@ -3,9 +3,13 @@ import Head from 'next/head';
 export default function Meta() {
   return (
     <Head>
-      <meta charset="UTF-8" />
+      <meta charSet="UTF-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+        name="description"
+        content="Yuko Horita's personal website including projects"
+      />
       <title>YUKO HORITA</title>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link

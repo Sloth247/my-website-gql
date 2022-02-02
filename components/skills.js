@@ -15,7 +15,7 @@ export default function Skills() {
   return (
     <section className={`${styles['main__skills']} wrapper`} id="skills">
       <div className={styles['main__skills--inner']}>
-        <h2>Skills</h2>
+        <h2 className={styles.title}>Skills</h2>
         <div className={styles['main__skills--container']}>
           <div className={styles['main__skills--item']}>
             <Image

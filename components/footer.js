@@ -9,8 +9,7 @@ import WPGraphQLIcon from '../public/img/icon-wpgraphql.svg';
 
 export default function footer() {
   return (
-    <footer className={styles.footer} id="contact">
-      <Contact />
+    <footer className={styles.footer}>
       <p>This website is made by using:</p>
       <div className={styles['footer__icon-container']}>
         <Image
