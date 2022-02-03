@@ -1,18 +1,31 @@
-/* Error: @content is only allowed within mixin declarations.
- *   ,
- * 5 |       @content;
- *   |       ^^^^^^^^
- *   '
- *   styles\sass\mixins.scss 5:7               @use
- *   styles\components\footer.module.scss 1:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: @content is only allowed within mixin declarations.\a   \2577 \a 5 \2502        @content;\a   \2502        ^^^^^^^^\a   \2575 \a   styles\\sass\\mixins.scss 5:7               @use\a   styles\\components\\footer.module.scss 1:1  root stylesheet";
+.footer {
+  background-color: #f8f9fa;
+  padding: 1rem 5% 0 5%;
 }
+@media screen and (min-width: 50em) {
+  .footer {
+    padding: 1rem 5rem 0 5rem;
+  }
+}
+.footer__icon-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.footer__copyrights {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.img-container {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+}
+.img-container:last-child {
+  width: 2.3rem;
+}
+
+/*# sourceMappingURL=footer.module.css.map */

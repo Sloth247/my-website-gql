@@ -47,6 +47,9 @@ export async function getStaticProps() {
               liveSite {
                 liveSiteUrl
               }
+              keyTech {
+                keyTech
+              }
             }
           }
         }

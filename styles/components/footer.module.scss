@@ -12,11 +12,20 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    margin-top: 0.5rem;
   }
 
   &__copyrights {
     text-align: center;
     font-weight: variables.$font-weight-bold;
     margin-top: 1rem;
+  }
+}
+.img-container {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  &:last-child {
+    width: 2.3rem;
   }
 }

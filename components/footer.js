@@ -11,34 +11,42 @@ export default function footer() {
     <footer className={styles.footer}>
       <p>This website is made by using:</p>
       <div className={styles['footer__icon-container']}>
-        <Image
-          src={NextIcon}
-          alt="Next JS"
-          className={styles['main__skills--icon']}
-          width={64}
-          height={64}
-        />
-        <Image
-          src={WPIcon}
-          alt="Wordpress"
-          className={styles['main__skills--icon']}
-          width={64}
-          height={64}
-        />
-        <Image
-          src={WPGraphQLIcon}
-          alt="WPGraphQL"
-          className={styles['main__skills--icon']}
-          width={50}
-          height={50}
-        />
-        <Image
-          src={VercelIcon}
-          alt="Vercel"
-          className={styles['main__skills--icon']}
-          width={50}
-          height={50}
-        />
+        <div className={styles['img-container']}>
+          <Image
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+            alt="Next JS"
+            className={styles['main__skills--icon']}
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+        <div className={styles['img-container']}>
+          <Image
+            src={WPIcon}
+            alt="Wordpress"
+            className={styles['main__skills--icon']}
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+        <div className={styles['img-container']}>
+          <Image
+            src={WPGraphQLIcon}
+            alt="WPGraphQL"
+            className={styles['main__skills--icon']}
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+        <div className={styles['img-container']}>
+          <Image
+            src={VercelIcon}
+            alt="Vercel"
+            className={styles['main__skills--icon']}
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
       </div>
       <p className={styles['footer__copyrights']}>
         &copy; {new Date().getFullYear()} Yuko Horita

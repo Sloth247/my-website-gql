@@ -12,14 +12,15 @@ export default function Post({ post }) {
 
   return (
     <article className={styles['main__portfolio--item']}>
-      <Image
-        src={post.featuredImage.node.guid}
-        alt=""
-        aria-hidden="true"
-        position="relative"
-        width={533}
-        height={350}
-      />
+      <div className={styles['img-container']}>
+        <Image
+          src={post.featuredImage.node.guid}
+          alt=""
+          aria-hidden="true"
+          width={533}
+          height={350}
+        />
+      </div>
       <Link href={post.liveSite.liveSiteUrl}>
         <a target="_blank" rel="noopener noreferrer">
           <h3 className={styles['main__portfolio--item-title']}>
@@ -30,6 +31,18 @@ export default function Post({ post }) {
       </Link>
       <div className={styles['main__portfolio--content']}>
         {parse(post.content)}
+        <p>
+          Designs provided by{' '}
+          <Link href="https://www.frontendmentor.io">
+            <a className={styles['fem-link']}>Frontend Mentor</a>
+          </Link>
+        </p>
+        <p className={styles.keyTech}>
+          Key Tech:{' '}
+          <span className={styles['keyTech--bold']}>
+            {post.keyTech.keyTech}
+          </span>
+        </p>
       </div>
       <Link href={post.github.githubUrl}>
         <a

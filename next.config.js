@@ -5,6 +5,11 @@ module.exports = {
     defaultLocale: 'en-US',
   },
   images: {
-    domains: ['yukohorita.click', 'cdn.jsdelivr.net'],
+    domains: [
+      'yukohorita.click',
+      'cdn.jsdelivr.net',
+      'www.frontendmentor.io',
+      'frontendmentor.io',
+    ],
   },
 };
