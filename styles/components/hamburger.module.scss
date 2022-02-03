@@ -15,8 +15,8 @@
     &,
     &::before,
     &::after {
-      width: 1.2rem;
-      height: 2px;
+      width: 1.5rem;
+      height: 3px;
       background-color: black;
       display: block;
       transition: all 0.2s ease;
@@ -25,13 +25,13 @@
     &::before {
       position: absolute;
       content: '';
-      top: -8px;
+      top: -10px;
       left: 0;
     }
     &::after {
       position: absolute;
       content: '';
-      top: 8px;
+      top: 10px;
       left: 0;
     }
   }

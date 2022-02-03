@@ -9,7 +9,6 @@ import ReactIcon from '../public/img/icon-react.svg';
 import NextIcon from '../public/img/icon-nextjs.svg';
 import SassIcon from '../public/img/icon-sass.svg';
 import WPIcon from '../public/img/icon-wordpress.svg';
-import GithubIcon from '../public/img/icon-github.png';
 
 export default function Skills() {
   return (
@@ -89,7 +88,7 @@ export default function Skills() {
           </div>
           <div className="main__skills--item">
             <Image
-              src={GithubIcon}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
               alt="Github"
               className={styles['main__skills--icon']}
               width={100}

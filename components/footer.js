@@ -1,4 +1,3 @@
-import Contact from './contact';
 import styles from '../styles/components/footer.module.scss';
 
 import Image from 'next/image';

@@ -5,6 +5,6 @@ module.exports = {
     defaultLocale: 'en-US',
   },
   images: {
-    domains: ['yukohorita.click'],
+    domains: ['yukohorita.click', 'cdn.jsdelivr.net'],
   },
 };

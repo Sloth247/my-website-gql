@@ -1,18 +1,49 @@
-/* Error: @content is only allowed within mixin declarations.
- *   ,
- * 5 |       @content;
- *   |       ^^^^^^^^
- *   '
- *   styles\sass\mixins.scss 5:7                  @use
- *   styles\components\hamburger.module.scss 1:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: @content is only allowed within mixin declarations.\a   \2577 \a 5 \2502        @content;\a   \2502        ^^^^^^^^\a   \2575 \a   styles\\sass\\mixins.scss 5:7                  @use\a   styles\\components\\hamburger.module.scss 1:1  root stylesheet";
+.hamburger-mobile-icon {
+  z-index: 30;
 }
+@media screen and (min-width: 50em) {
+  .hamburger-mobile-icon {
+    display: none;
+  }
+}
+.hamburger-mobile-icon:focus {
+  outline: dotted 5px #ffd60a;
+  outline-offset: 1rem;
+}
+.hamburger-mobile-icon span {
+  position: relative;
+}
+.hamburger-mobile-icon span, .hamburger-mobile-icon span::before, .hamburger-mobile-icon span::after {
+  width: 1.5rem;
+  height: 3px;
+  background-color: black;
+  display: block;
+  transition: all 0.2s ease;
+}
+.hamburger-mobile-icon span::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: 0;
+}
+.hamburger-mobile-icon span::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 0;
+}
+.hamburger-mobile-icon.menu-close span::before {
+  top: 0;
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+.hamburger-mobile-icon.menu-close span {
+  background-color: transparent;
+}
+.hamburger-mobile-icon.menu-close span::after {
+  top: 0;
+  transform: rotate(-45deg);
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=hamburger.module.css.map */

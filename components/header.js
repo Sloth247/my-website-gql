@@ -25,7 +25,17 @@ export default function Header() {
           <a>
             <h1 className={styles['header__nav--logo']}>
               <span className="sr-only">Yuko Horita Web Developer</span>
-              <Image src={Logo} alt="Yuko Horita" width={64} height={64} />
+              <div className={styles['logo-container']}>
+                <Image
+                  src={Logo}
+                  alt="Yuko Horita"
+                  layout="fill"
+                  objectFit="cover"
+                  // width={56}
+                  // height={56}
+                  // position="relative"
+                />
+              </div>
             </h1>
           </a>
         </Link>

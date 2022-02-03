@@ -34,7 +34,18 @@
   }
 
   &--title {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    @include mixins.mq(medium) {
+      margin-bottom: 4rem;
+    }
+    &::before {
+      display: block;
+      content: '';
+      margin-top: -8rem;
+      height: 8rem;
+      visibility: hidden;
+      pointer-events: none;
+    }
   }
 
   &--item {

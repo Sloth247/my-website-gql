@@ -13,6 +13,7 @@
     background-color: variables.$color-gray-bg;
     font-weight: variables.$font-weight-bold;
     text-transform: uppercase;
+    padding: 0.8rem 5%;
 
     @include mixins.mq(medium) {
       flex-wrap: nowrap;
@@ -182,5 +183,14 @@
   }
   &.overlay-open::after {
     transform: scale(1);
+  }
+}
+.logo-container {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  @include mixins.mq(medium) {
+    width: 3.5rem;
+    height: 3.5rem;
   }
 }
