@@ -34,7 +34,13 @@ export default function Post({ post }) {
         <p>
           Designs provided by{' '}
           <Link href="https://www.frontendmentor.io">
-            <a className={styles['fem-link']}>Frontend Mentor</a>
+            <a
+              className={styles['fem-link']}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Frontend Mentor
+            </a>
           </Link>
         </p>
         <p className={styles.keyTech}>
