@@ -159,31 +159,9 @@
 
 .fem-link {
   position: relative;
-}
-.fem-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  height: 10px;
-  width: 0;
-  opacity: 0.7;
-  background: #f2cc8f;
-  background: #f4978e;
-  transition: none;
-}
-.fem-link:focus, .fem-link:hover {
-  outline: none;
-  transform: translateY(-0.1rem);
-}
-.fem-link:focus:after, .fem-link:hover:after {
-  width: 100%;
-  transition: all 0.5s ease-in;
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  -ms-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
+  font-weight: bold;
+  -webkit-text-decoration: underline solid 2px #fff;
+          text-decoration: underline solid 2px #fff;
 }
 
 .keyTech--bold {

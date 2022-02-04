@@ -15,7 +15,7 @@ html {
 
 *:focus {
   outline: dotted 5px #ffd60a;
-  outline-offset: 3px;
+  outline-offset: 1px;
 }
 
 body {

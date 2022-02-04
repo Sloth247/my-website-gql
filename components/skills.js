@@ -19,7 +19,8 @@ export default function Skills() {
           <div className={styles['main__skills--item']}>
             <Image
               src={HTML}
-              alt="HTML5"
+              alt=""
+              aria-hidden="true"
               className={styles['main__skills--icon']}
               width={96}
               height={96}
@@ -29,7 +30,8 @@ export default function Skills() {
           <div className="main__skills--item">
             <Image
               src={CSS}
-              alt="CSS3"
+              alt=""
+              aria-hidden="true"
               className={styles['main__skills--icon']}
               width={96}
               height={96}
@@ -39,7 +41,8 @@ export default function Skills() {
           <div className="main__skills--item">
             <Image
               src={JS}
-              alt="JavaScript"
+              alt=""
+              aria-hidden="true"
               className={styles['main__skills--icon']}
               width={96}
               height={96}
@@ -49,7 +52,8 @@ export default function Skills() {
           <div className="main__skills--item">
             <Image
               src={ReactIcon}
-              alt="React"
+              alt=""
+              aria-hidden="true"
               className={styles['main__skills--icon']}
               width={96}
               height={96}
@@ -59,7 +63,8 @@ export default function Skills() {
           <div className="main__skills--item">
             <Image
               src={NextIcon}
-              alt="Next JS"
+              alt=""
+              aria-hidden="true"
               className={styles['main__skills--icon']}
               width={96}
               height={96}
@@ -69,7 +74,8 @@ export default function Skills() {
           <div className="main__skills--item">
             <Image
               src={SassIcon}
-              alt="Sass"
+              alt=""
+              aria-hidden="true"
               className={styles['main__skills--icon']}
               width={100}
               height={100}
@@ -79,7 +85,8 @@ export default function Skills() {
           <div className="main__skills--item">
             <Image
               src={WPIcon}
-              alt="Wordpress"
+              alt=""
+              aria-hidden="true"
               className={styles['main__skills--icon']}
               width={100}
               height={100}
@@ -89,7 +96,8 @@ export default function Skills() {
           <div className="main__skills--item">
             <Image
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              alt="Github"
+              alt=""
+              aria-hidden="true"
               className={styles['main__skills--icon']}
               width={100}
               height={100}
