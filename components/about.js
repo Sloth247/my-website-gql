@@ -12,9 +12,8 @@ export default function About() {
           alt=""
           className={styles['main__about--img']}
           aria-hidden="true"
-          position="relative"
-          width={711}
-          height={400}
+          width={1041.32}
+          height={554.17}
         />
         <p className={styles['main__about--description']}>
           Hi 👋 there, I&apos;m Yuko Horita and thanks for visiting my website.
