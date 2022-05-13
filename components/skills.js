@@ -9,6 +9,7 @@ import ReactIcon from '../public/img/icon-react.svg';
 import NextIcon from '../public/img/icon-nextjs.svg';
 import SassIcon from '../public/img/icon-sass.svg';
 import WPIcon from '../public/img/icon-wordpress.svg';
+import RemixIcon from '../public/img/icon-remix.svg';
 
 export default function Skills() {
   return (
@@ -51,6 +52,17 @@ export default function Skills() {
           </div>
           <div className="main__skills--item">
             <Image
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+              alt=""
+              aria-hidden="true"
+              className={styles['main__skills--icon']}
+              width={100}
+              height={100}
+            />
+            <p className={styles['main__skills--name']}>TypeScript</p>
+          </div>
+          <div className="main__skills--item">
+            <Image
               src={ReactIcon}
               alt=""
               aria-hidden="true"
@@ -70,6 +82,17 @@ export default function Skills() {
               height={96}
             />
             <p className={styles['main__skills--name']}>Next.js</p>
+          </div>
+          <div className="main__skills--item">
+            <Image
+              src={RemixIcon}
+              alt=""
+              aria-hidden="true"
+              className={styles['main__skills--icon']}
+              width={100}
+              height={100}
+            />
+            <p className={styles['main__skills--name']}>Remix</p>
           </div>
           <div className="main__skills--item">
             <Image
