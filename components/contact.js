@@ -12,7 +12,7 @@ export default function contact() {
         <h2 className={styles.title}>Get In Touch</h2>
         <div className={styles.texts}>
           <p className={styles.open}>I&apos;m open for chat!</p>
-          <a href="mailto:xxxx@outlook.com" className={styles.item}>
+          <a href="mailto:yukohorita@outlook.com" className={styles.item}>
             <p className={styles.details}>
               <MdEmail />
               <span>yukohorita@outlook.com</span>
